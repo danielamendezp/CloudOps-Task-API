@@ -181,7 +181,19 @@ The approved public domains intentionally disclose the association with Dani Web
 
 [Local HTTP integration evidence](docs/local-integration-evidence.md) separately documents asset/task behavior and SQLite persistence. No AWS calls were made by that test. See [validation](VALIDATION.md) and the [publication review](PUBLICATION_REVIEW.md) for remaining checks.
 
-Original desktop screenshots were excluded from the public package because they expose the local Windows username and directory. New sanitized screenshots can be added separately.
+### Local Docker evidence
+
+These screenshots show the initial task-only version: image creation, container startup, health checks, and task creation and retrieval. The current CI workflow separately verifies the updated asset API and persistence after container recreation.
+
+![Docker image build and container startup](docs/images/initial-docker-build.png)
+
+![Running container, health check, and task creation and retrieval](docs/images/initial-docker-api-check.png)
+
+### Automated validation
+
+[View the verified successful GitHub Actions run](https://github.com/danielamendezp/CloudOps-Task-API/actions/runs/42853166425).
+
+The run passed the Python and publication checks, Terraform formatting/initialization/validation for both roots, both container builds, and the Compose persistence test. It did not provision AWS infrastructure.
 
 To refresh and combine the report files, follow [AWS connection instructions](docs/AWS_CONNECTION.md). The export scripts keep sensitive source fields out of the TXT output.
 
@@ -237,9 +249,9 @@ The image deletion command covers a small demo repository. If more than 100 imag
 - Task creation validates the referenced asset. Asset deletion is not implemented. Task updates use a conditional DynamoDB update so missing tasks are not silently created.
 - Runtime IAM permissions are scoped to the inventory table: GetItem, PutItem, Scan, and UpdateItem. Log writes are scoped to the function log group. The table remains named cloudops-tasks for compatibility with the earlier Terraform configuration.
 - Terraform state is local. Use an encrypted remote backend and locking for team use. Keep state, plans, databases, credentials, and private asset exports out of Git.
-- AWS routes require IAM authentication. The Lambda image, Terraform schema, and AWS integration still need independent verification for this release.
+- AWS routes require IAM authentication. The Lambda image build and Terraform schema have passed CI; the optional AWS application deployment and its end-to-end integration remain unverified.
 - The CloudWatch alarm monitors Lambda Errors. Handled HTTP 500 responses are not covered, and no notification action is configured. Add application-error metrics and a notification destination before relying on it operationally.
-- CI is configured for tests, validation and builds, not automatic deployment. Review the actual Actions run before claiming it passed.
+- CI performs tests, validation, container builds, and a Compose persistence check. The linked run passed; automatic AWS deployment is not configured.
 - No UI, user accounts, scheduled discovery, vulnerability scanning, or direct maintenance execution is included. There is no historical audit trail or task notes field; status stores the current value only.
 - Base-image tags and the SDK supplied by the Lambda image are not pinned to immutable dependency versions. Pin digests and dependencies and add scanning for production releases.
 
@@ -252,10 +264,10 @@ The image deletion command covers a small demo repository. If more than 100 imag
 | Updated SQLite persistence | Passed across process restart |
 | Terraform formatting | Passed |
 | Earlier task-only Docker version | Previously verified by owner; original screenshots omitted from public package |
-| Updated Docker image and volume | Pending verification on the user's Docker installation |
-| Lambda image build | Pending |
-| Terraform schema validation | Pending; earlier environment could not start provider |
-| GitHub Actions | Pending confirmation |
+| Updated Docker image and volume | Passed in GitHub Actions, including container recreation |
+| Lambda image build | Passed in GitHub Actions |
+| Terraform schema validation | Passed in GitHub Actions for both roots |
+| GitHub Actions | Passed; successful run linked above |
 | Optional Terraform AWS deployment | Not performed |
 | Read-only AWS discovery | Owner snapshots verify CloudFront, DynamoDB, S3 and Lambda |
 | S3 configuration reads | AccessDenied in supplied snapshot; still pending |
