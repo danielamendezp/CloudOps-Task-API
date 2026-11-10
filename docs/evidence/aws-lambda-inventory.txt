@@ -1,0 +1,49 @@
+CloudOps Task API - Live AWS Lambda Report
+Queried at: 2026-11-10T15:40:19.363739+00:00
+Source: AWS Lambda ListFunctions (live, read-only)
+Region: us-east-1
+Functions reported: 3
+Privacy: original function names, ARNs, roles, environment variables and code identifiers omitted.
+Configuration snapshot only. No functions invoked, code downloaded, or configurations changed.
+
+Asset alias: lambda-98c55c991ee05fe2
+Service: AWS Lambda
+Region: us-east-1
+Package type: Zip
+Runtime: nodejs24.x
+Architecture: x86_64
+Memory (MB): 128
+Timeout (seconds): 3
+Ephemeral storage (MB): 512
+Last modified (AWS): 2026-02-16T21:00:46.000+0000
+Locally registered at: 2026-11-10T15:40:16.470271+00:00
+
+Asset alias: lambda-318dc30e91d56f4c
+Service: AWS Lambda
+Region: us-east-1
+Package type: Zip
+Runtime: nodejs24.x
+Architecture: x86_64
+Memory (MB): 128
+Timeout (seconds): 45
+Ephemeral storage (MB): 512
+Last modified (AWS): 2026-02-16T21:30:18.000+0000
+Locally registered at: 2026-11-10T15:40:16.476358+00:00
+
+Asset alias: lambda-dd307f87f83d0822
+Service: AWS Lambda
+Region: us-east-1
+Package type: Zip
+Runtime: nodejs24.x
+Architecture: x86_64
+Memory (MB): 128
+Timeout (seconds): 57
+Ephemeral storage (MB): 512
+Last modified (AWS): 2026-03-13T14:21:41.000+0000
+Locally registered at: 2026-11-10T15:40:16.483011+00:00
+
+Notes:
+- ListFunctions does not establish runtime health or report the complete deployment state.
+- Memory, timeout and storage are configuration settings, not measured usage or estimated cost.
+- This report is limited to the requested resource count in one region.
+- No published version enumeration or vulnerability assessment is performed.

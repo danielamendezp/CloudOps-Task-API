@@ -1,0 +1,312 @@
+CloudOps Task API - Consolidated AWS Inventory
+Combined at: 2026-11-10T15:48:27.250435+00:00
+Services: CloudFront, S3, DynamoDB, Lambda
+Each section retains its original query timestamp.
+
+CloudOps Task API - Live AWS CloudFront Report
+Queried at: 2026-11-10T15:21:54.391795+00:00
+Source: AWS CloudFront ListDistributions (live, read-only)
+Scope: CloudFront global distributions, limited to the requested result count
+Distributions reported: 3
+Privacy: AWS IDs, account numbers, ARNs, origins and certificate identifiers omitted.
+Only explicitly approved custom domains confirmed in AWS aliases are included.
+Configuration evidence only: not a vulnerability scan or a website availability test.
+
+Asset alias: cloudfront-ead5faa6d4d68e6b
+Service: Amazon CloudFront
+Purpose: Content delivery for personal web projects
+Approved domain(s) configured in AWS: daniwebworks-templates.com
+Deployment status: Deployed
+Distribution enabled: True
+Supported HTTP setting: HTTP2
+IPv6 enabled: True
+Default cache behavior viewer protocol: redirect-to-https
+Viewer certificate minimum TLS setting: TLSv1.2_2021
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:12:02.607157+00:00
+
+Asset alias: cloudfront-be5edb321d029c0e
+Service: Amazon CloudFront
+Purpose: Content delivery for personal web projects
+Approved domain(s) configured in AWS: daniwebworks.com, www.daniwebworks.com
+Deployment status: Deployed
+Distribution enabled: True
+Supported HTTP setting: HTTP2
+IPv6 enabled: True
+Default cache behavior viewer protocol: redirect-to-https
+Viewer certificate minimum TLS setting: TLSv1.2_2021
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:12:02.612152+00:00
+
+Asset alias: cloudfront-cc1f396148b65ffb
+Service: Amazon CloudFront
+Purpose: Content delivery for personal web projects
+Approved domain(s) configured in AWS: Not published / no approved match
+Deployment status: Deployed
+Distribution enabled: True
+Supported HTTP setting: HTTP2
+IPv6 enabled: True
+Default cache behavior viewer protocol: redirect-to-https
+Viewer certificate minimum TLS setting: TLSv1.2_2021
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:12:02.617979+00:00
+
+Notes:
+- Configured domain aliases do not prove DNS currently points to this distribution.
+- Deployed and enabled do not prove the website responds successfully.
+- The viewer protocol field describes the DEFAULT behavior; other behaviors may differ.
+- Resources not imported locally are reported without a local inventory ID.
+
+
+CloudOps Task API - Live AWS Storage Inventory
+Queried at: 2026-11-10T15:35:32.070690+00:00
+Source: live AWS control-plane queries (read-only)
+DynamoDB scope: selected region; S3 scope: account bucket listing
+Resources reported: 18
+Privacy: original table/bucket names, account IDs, ARNs, keys, rows and objects omitted.
+Configuration snapshot only; no data reads, changes, availability test or vulnerability scan.
+
+Asset alias: dynamodb-297447256801ecf8
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.009698+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-30ebf834619606c7
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.016126+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-2dc4d8f2f9b6e060
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.022121+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-98949c86818aa55e
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.028593+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-3a80ed3f6855174f
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.052583+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-e933e38177afe878
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.059501+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-e8ff492335341e46
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.065366+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-cfa306c3f08586dc
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.072339+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-b13ca307ee1575ea
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.079871+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: dynamodb-eb052f2b7cddacce
+Service: dynamodb
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.086304+00:00
+Region: us-east-1
+Table status: ACTIVE
+Billing mode: PAY_PER_REQUEST
+Deletion protection enabled: False
+DynamoDB stream enabled: False
+Global secondary index count: 0
+SSE status returned by API: Not returned; not evidence of missing encryption
+
+Asset alias: s3-7406b02599a23bfa
+Service: s3
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.092808+00:00
+Region: Unavailable (AccessDenied)
+Versioning: Unavailable (AccessDenied)
+Bucket-level public access block: Unavailable (AccessDenied)
+
+Asset alias: s3-5798518b94c2264d
+Service: s3
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.099132+00:00
+Region: Unavailable (AccessDenied)
+Versioning: Unavailable (AccessDenied)
+Bucket-level public access block: Unavailable (AccessDenied)
+
+Asset alias: s3-dbf8c8e26829e438
+Service: s3
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.105801+00:00
+Region: Unavailable (AccessDenied)
+Versioning: Unavailable (AccessDenied)
+Bucket-level public access block: Unavailable (AccessDenied)
+
+Asset alias: s3-030acd4ba0f4ba36
+Service: s3
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.112692+00:00
+Region: Unavailable (AccessDenied)
+Versioning: Unavailable (AccessDenied)
+Bucket-level public access block: Unavailable (AccessDenied)
+
+Asset alias: s3-826eb36637cab018
+Service: s3
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.121158+00:00
+Region: Unavailable (AccessDenied)
+Versioning: Unavailable (AccessDenied)
+Bucket-level public access block: Unavailable (AccessDenied)
+
+Asset alias: s3-9fa77a904367f3e7
+Service: s3
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.130044+00:00
+Region: Unavailable (AccessDenied)
+Versioning: Unavailable (AccessDenied)
+Bucket-level public access block: Unavailable (AccessDenied)
+
+Asset alias: s3-2886f125600ce617
+Service: s3
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.136995+00:00
+Region: Unavailable (AccessDenied)
+Versioning: Unavailable (AccessDenied)
+Bucket-level public access block: Unavailable (AccessDenied)
+
+Asset alias: s3-aa6a05af4c893766
+Service: s3
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:32:12.144318+00:00
+Region: Unavailable (AccessDenied)
+Versioning: Unavailable (AccessDenied)
+Bucket-level public access block: Unavailable (AccessDenied)
+
+Notes:
+- Not reported / unavailable means unknown, not a failed security control.
+- Bucket-level public access block does not establish effective public exposure; account settings, policies and other controls also matter.
+- DynamoDB SSE fields may be absent even when encryption at rest is provided.
+- Resources with a configuration-query error are retained with their alias and error code.
+- Each service is limited to the requested resource count; this is not necessarily a complete account inventory.
+
+
+CloudOps Task API - Live AWS Lambda Report
+Queried at: 2026-11-10T15:40:19.363739+00:00
+Source: AWS Lambda ListFunctions (live, read-only)
+Region: us-east-1
+Functions reported: 3
+Privacy: original function names, ARNs, roles, environment variables and code identifiers omitted.
+Configuration snapshot only. No functions invoked, code downloaded, or configurations changed.
+
+Asset alias: lambda-98c55c991
+Service: AWS Lambda
+Region: us-east-1
+Package type: Zip
+Runtime: nodejs24.x
+Architecture: x86_64
+Memory (MB): 128
+Timeout (seconds): 3
+Ephemeral storage (MB): 512
+Last modified (AWS): 2026-02-16T21:00:46.000+0000
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:40:16.470271+00:00
+
+Asset alias: lambda-318dc30
+Service: AWS Lambda
+Region: us-east-1
+Package type: Zip
+Runtime: nodejs24.x
+Architecture: x86_64
+Memory (MB): 128
+Timeout (seconds): 45
+Ephemeral storage (MB): 512
+Last modified (AWS): 2026-02-16T21:30:18.000+0000
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:40:16.476358+00:00
+
+Asset alias: lambda-dd307f8
+Service: AWS Lambda
+Region: us-east-1
+Package type: Zip
+Runtime: nodejs24.x
+Architecture: x86_64
+Memory (MB): 128
+Timeout (seconds): 57
+Ephemeral storage (MB): 512
+Last modified (AWS): 2026-03-13T14:21:41.000+0000
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:40:16.483011+00:00
+
+Notes:
+- ListFunctions does not establish runtime health or report the complete deployment state.
+- Memory, timeout and storage are configuration settings, not measured usage or estimated cost.
+- This report is limited to the requested resource count in one region.
+- No published version enumeration or vulnerability assessment is performed.

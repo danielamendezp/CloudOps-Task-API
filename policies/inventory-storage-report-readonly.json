@@ -1,0 +1,8 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Effect": "Allow", "Action": ["dynamodb:ListTables", "s3:ListAllMyBuckets"], "Resource": "*"},
+    {"Effect": "Allow", "Action": "dynamodb:DescribeTable", "Resource": "arn:aws:dynamodb:us-east-1:*:table/*"},
+    {"Effect": "Allow", "Action": ["s3:GetBucketLocation", "s3:GetBucketVersioning", "s3:GetBucketPublicAccessBlock"], "Resource": "arn:aws:s3:::*"}
+  ]
+}

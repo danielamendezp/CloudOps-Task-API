@@ -1,0 +1,53 @@
+CloudOps Task API - Live AWS CloudFront Report
+Queried at: 2026-11-10T15:21:54.391795+00:00
+Source: AWS CloudFront ListDistributions (live, read-only)
+Scope: CloudFront global distributions, limited to the requested result count
+Distributions reported: 3
+Privacy: AWS IDs, account numbers, ARNs, origins and certificate identifiers omitted.
+Only explicitly approved custom domains confirmed in AWS aliases are included.
+Configuration evidence only: not a vulnerability scan or a website availability test.
+
+Asset alias: cloudfront-ead5faa6d4d68e6b
+Service: Amazon CloudFront
+Purpose: Content delivery for personal web projects
+Approved domain(s) configured in AWS: daniwebworks-templates.com
+Deployment status: Deployed
+Distribution enabled: True
+Supported HTTP setting: HTTP2
+IPv6 enabled: True
+Default cache behavior viewer protocol: redirect-to-https
+Viewer certificate minimum TLS setting: TLSv1.2_2021
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:12:02.607157+00:00
+
+Asset alias: cloudfront-be5edb321d029c0e
+Service: Amazon CloudFront
+Purpose: Content delivery for personal web projects
+Approved domain(s) configured in AWS: daniwebworks.com, www.daniwebworks.com
+Deployment status: Deployed
+Distribution enabled: True
+Supported HTTP setting: HTTP2
+IPv6 enabled: True
+Default cache behavior viewer protocol: redirect-to-https
+Viewer certificate minimum TLS setting: TLSv1.2_2021
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:12:02.612152+00:00
+
+Asset alias: cloudfront-cc1f396148b65ffb
+Service: Amazon CloudFront
+Purpose: Content delivery for personal web projects
+Approved domain(s) configured in AWS: Not published / no approved match
+Deployment status: Deployed
+Distribution enabled: True
+Supported HTTP setting: HTTP2
+IPv6 enabled: True
+Default cache behavior viewer protocol: redirect-to-https
+Viewer certificate minimum TLS setting: TLSv1.2_2021
+Local inventory ID: secret
+Locally registered at: 2026-11-10T15:12:02.617979+00:00
+
+Notes:
+- Configured domain aliases do not prove DNS currently points to this distribution.
+- Deployed and enabled do not prove the website responds successfully.
+- The viewer protocol field describes the DEFAULT behavior; other behaviors may differ.
+- Resources not imported locally are reported without a local inventory ID.
